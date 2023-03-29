@@ -1,0 +1,4 @@
+[server]2023/03/23 - 19:09:29.381	[31merror[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/core/server.go:48	net.Listen error: listen tcp :8888: bind: address already in use
+[server]2023/03/23 - 19:49:08.311	[31merror[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/api/v1/system/sys_user.go:163	注册失败!	{"error": "用户名已注册"}
+[server]2023/03/23 - 19:58:09.049	[31merror[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/03/23 - 20:00:41.964	[31merror[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection

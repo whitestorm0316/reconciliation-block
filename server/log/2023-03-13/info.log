@@ -1,0 +1,32 @@
+[server]2023/03/13 - 21:59:09.324	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/gorm.go:65	register table success
+[server]2023/03/13 - 21:59:09.325	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/router.go:38	register swagger handler
+[server]2023/03/13 - 21:59:09.325	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/router.go:79	router register success
+[server]2023/03/13 - 21:59:09.326	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/core/server.go:36	server run success on 	{"address": ":8888"}
+[server]2023/03/13 - 22:07:36.478	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/gorm.go:65	register table success
+[server]2023/03/13 - 22:07:36.479	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/router.go:38	register swagger handler
+[server]2023/03/13 - 22:07:36.481	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/router.go:79	router register success
+[server]2023/03/13 - 22:07:36.481	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/core/server.go:36	server run success on 	{"address": ":8888"}
+[server]2023/03/13 - 22:08:22.687	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/gorm.go:65	register table success
+[server]2023/03/13 - 22:08:22.688	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/router.go:38	register swagger handler
+[server]2023/03/13 - 22:08:22.689	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/router.go:79	router register success
+[server]2023/03/13 - 22:08:22.689	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/core/server.go:36	server run success on 	{"address": ":8888"}
+[server]2023/03/13 - 22:27:01.687	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/gorm.go:65	register table success
+[server]2023/03/13 - 22:27:01.688	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/router.go:38	register swagger handler
+[server]2023/03/13 - 22:27:01.689	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/router.go:79	router register success
+[server]2023/03/13 - 22:27:01.690	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/core/server.go:36	server run success on 	{"address": ":8888"}
+[server]2023/03/13 - 22:27:34.296	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/gorm.go:65	register table success
+[server]2023/03/13 - 22:27:34.297	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/router.go:38	register swagger handler
+[server]2023/03/13 - 22:27:34.299	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/router.go:79	router register success
+[server]2023/03/13 - 22:27:34.299	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/core/server.go:36	server run success on 	{"address": ":8888"}
+[server]2023/03/13 - 22:27:52.866	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/gorm.go:65	register table success
+[server]2023/03/13 - 22:27:52.867	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/router.go:38	register swagger handler
+[server]2023/03/13 - 22:27:52.868	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/router.go:79	router register success
+[server]2023/03/13 - 22:27:52.868	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/core/server.go:36	server run success on 	{"address": ":8888"}
+[server]2023/03/13 - 22:33:43.542	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/gorm.go:65	register table success
+[server]2023/03/13 - 22:33:43.543	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/router.go:38	register swagger handler
+[server]2023/03/13 - 22:33:43.544	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/router.go:79	router register success
+[server]2023/03/13 - 22:33:43.544	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/core/server.go:36	server run success on 	{"address": ":8888"}
+[server]2023/03/13 - 22:36:07.646	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/gorm.go:65	register table success
+[server]2023/03/13 - 22:36:07.647	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/router.go:38	register swagger handler
+[server]2023/03/13 - 22:36:07.648	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/router.go:79	router register success
+[server]2023/03/13 - 22:36:07.648	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/core/server.go:36	server run success on 	{"address": ":8888"}
