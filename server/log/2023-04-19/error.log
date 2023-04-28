@@ -1,0 +1,9 @@
+[server]2023/04/19 - 11:53:45.960	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/04/19 - 12:06:59.429	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/service/system/sys_autocode_history.go:83	ClearTag DeleteApiByIds:	{"error": "/lb/createLocalbill:POSTcasbin同步清理失败"}
+[server]2023/04/19 - 12:06:59.430	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/service/system/sys_autocode_history.go:88	ClearTag DropTable:	{"error": "Error 1051: Unknown table 'reb.localbill'"}
+[server]2023/04/19 - 19:33:30.021	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/system/sys_user.go:56	登陆失败! 用户名不存在或者密码错误!	{"error": "db not init"}
+[server]2023/04/19 - 19:33:35.080	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/04/19 - 22:30:20.378	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/04/19 - 23:09:00.590	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/service/system/sys_autocode_history.go:83	ClearTag DeleteApiByIds:	{"error": "/lb/createLocalBill:POSTcasbin同步清理失败"}
+[server]2023/04/19 - 23:46:03.328	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/service/system/sys_autocode_history.go:83	ClearTag DeleteApiByIds:	{"error": "/eb/createErrorBill:POSTcasbin同步清理失败"}
+[server]2023/04/19 - 23:46:03.329	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/service/system/sys_autocode_history.go:88	ClearTag DropTable:	{"error": "Error 1051: Unknown table 'reb.error_bill'"}

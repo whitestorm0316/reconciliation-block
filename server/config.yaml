@@ -7,7 +7,7 @@ aliyun-oss:
   base-path: yourBasePath
 autocode:
   transfer-restart: true
-  root: /Users/john/code/reconciliation-system-based-on-blockchain/admin
+  root: /home/whitestorm/workspace/reconciliation-block
   server: /server
   server-api: /api/v1/%s
   server-plug: /plugin/%s
@@ -22,8 +22,8 @@ autocode:
   web-table: /view
 aws-s3:
   bucket: invoice
-  region: "sz"
-  endpoint: "106.53.99.123:9000"
+  region: sz
+  endpoint: 106.53.99.123:9000
   s3-force-path-style: false
   disable-ssl: false
   secret-id: fSPuiuYkNZDK829l
@@ -85,7 +85,7 @@ hua-wei-obs:
   access-key: you-access-key
   secret-key: you-secret-key
 jwt:
-  signing-key: 505cb6d1-24c9-485b-be51-b1c42d395aee
+  signing-key: a11b6caf-5bc1-41ef-bb2a-5f05051b181e
   expires-time: 7d
   buffer-time: 1d
   issuer: qmPlus
@@ -110,9 +110,9 @@ mysql:
   path: 127.0.0.1
   port: "3306"
   config: charset=utf8mb4&parseTime=True&loc=Local
-  db-name: gva
+  db-name: reb
   username: root
-  password: ""
+  password: aaaa
   prefix: ""
   singular: false
   engine: ""

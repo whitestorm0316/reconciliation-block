@@ -1,0 +1,5 @@
+[server]2023/04/25 - 15:28:08.641	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/reb/reconciled_bill.go:37	创建失败!	{"error": "Error 1062: Duplicate entry '20' for key 'reconciled_bill.PRIMARY'"}
+[server]2023/04/25 - 15:41:21.367	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/reb/third_party_bill.go:109	更新失败!	{"error": "Error 1292: Incorrect datetime value: '0000-00-00' for column 'created_at' at row 1"}
+[server]2023/04/25 - 16:51:27.002	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/reb/third_party_bill.go:109	更新失败!	{"error": "Error 1292: Incorrect datetime value: '0000-00-00' for column 'created_at' at row 1"}
+[server]2023/04/25 - 16:52:01.463	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/reb/third_party_bill.go:109	更新失败!	{"error": "Error 1292: Incorrect datetime value: '0000-00-00' for column 'created_at' at row 1"}
+[server]2023/04/25 - 20:49:16.861	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection

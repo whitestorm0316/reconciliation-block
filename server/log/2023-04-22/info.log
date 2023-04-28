@@ -1,0 +1,12 @@
+[server]2023/04/22 - 23:11:26.094	[34minfo[0m	/home/whitestorm/workspace/reconciliation-block/server/initialize/gorm.go:73	register table success
+[server]2023/04/22 - 23:11:26.097	[34minfo[0m	/home/whitestorm/workspace/reconciliation-block/server/initialize/router.go:41	register swagger handler
+[server]2023/04/22 - 23:11:26.099	[34minfo[0m	/home/whitestorm/workspace/reconciliation-block/server/initialize/router.go:89	router register success
+[server]2023/04/22 - 23:11:26.099	[34minfo[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:36	server run success on 	{"address": ":8888"}
+[server]2023/04/22 - 23:19:11.285	[34minfo[0m	/home/whitestorm/workspace/reconciliation-block/server/initialize/gorm.go:74	register table success
+[server]2023/04/22 - 23:19:11.286	[34minfo[0m	/home/whitestorm/workspace/reconciliation-block/server/initialize/router.go:41	register swagger handler
+[server]2023/04/22 - 23:19:11.288	[34minfo[0m	/home/whitestorm/workspace/reconciliation-block/server/initialize/router.go:90	router register success
+[server]2023/04/22 - 23:19:11.288	[34minfo[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:36	server run success on 	{"address": ":8888"}
+[server]2023/04/22 - 23:19:47.020	[34minfo[0m	/home/whitestorm/workspace/reconciliation-block/server/initialize/gorm.go:74	register table success
+[server]2023/04/22 - 23:19:47.021	[34minfo[0m	/home/whitestorm/workspace/reconciliation-block/server/initialize/router.go:41	register swagger handler
+[server]2023/04/22 - 23:19:47.023	[34minfo[0m	/home/whitestorm/workspace/reconciliation-block/server/initialize/router.go:90	router register success
+[server]2023/04/22 - 23:19:47.024	[34minfo[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:36	server run success on 	{"address": ":8888"}

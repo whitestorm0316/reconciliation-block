@@ -1,0 +1,11 @@
+[server]2023/04/20 - 11:33:17.516	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/04/20 - 15:12:28.431	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/reb/local_bill.go:157	获取失败!	{"error": "Error 1146: Table 'reb.local_bill' doesn't exist"}
+[server]2023/04/20 - 15:12:49.887	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/04/20 - 19:03:49.860	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/04/20 - 19:04:18.099	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/system/sys_user.go:56	登陆失败! 用户名不存在或者密码错误!	{"error": "db not init"}
+[server]2023/04/20 - 19:04:24.888	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/04/20 - 19:04:37.379	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/system/sys_user.go:56	登陆失败! 用户名不存在或者密码错误!	{"error": "db not init"}
+[server]2023/04/20 - 19:04:46.386	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/system/sys_user.go:56	登陆失败! 用户名不存在或者密码错误!	{"error": "db not init"}
+[server]2023/04/20 - 19:05:42.974	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/system/sys_user.go:56	登陆失败! 用户名不存在或者密码错误!	{"error": "db not init"}
+[server]2023/04/20 - 19:05:48.486	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/04/20 - 23:33:40.706	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection

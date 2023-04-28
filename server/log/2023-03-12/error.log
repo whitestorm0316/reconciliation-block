@@ -1,7 +1,0 @@
-[server]2023/03/12 - 10:47:03.489	[31merror[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/core/server.go:48	net.Listen error: listen tcp :8888: bind: address already in use
-[server]2023/03/12 - 19:53:00.650	[31merror[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/core/server.go:48	net.Listen error: listen tcp :8888: bind: address already in use
-[server]2023/03/12 - 19:53:34.397	[31merror[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
-[server]2023/03/12 - 20:21:24.895	[31merror[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/api/v1/system/sys_menu.go:142	添加失败!	{"error": "存在重复name，请修改name"}
-[server]2023/03/12 - 21:54:16.364	[31merror[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/api/v1/system/sys_menu.go:172	删除失败!	{"error": "此菜单存在子菜单不可删除"}
-[server]2023/03/12 - 21:54:26.605	[31merror[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/api/v1/system/sys_menu.go:172	删除失败!	{"error": "此菜单存在子菜单不可删除"}
-[server]2023/03/12 - 23:21:20.192	[31merror[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection

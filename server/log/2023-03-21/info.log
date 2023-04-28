@@ -1,4 +1,0 @@
-[server]2023/03/21 - 21:26:58.245	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/gorm.go:67	register table success
-[server]2023/03/21 - 21:26:58.247	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/router.go:40	register swagger handler
-[server]2023/03/21 - 21:26:58.248	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/initialize/router.go:83	router register success
-[server]2023/03/21 - 21:26:58.249	[34minfo[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/core/server.go:36	server run success on 	{"address": ":8888"}

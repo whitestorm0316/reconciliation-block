@@ -3,10 +3,11 @@ package system
 import (
 	"context"
 
-	"github.com/pkg/errors"
-	"gorm.io/gorm"
 	sysModel "server/model/system"
 	"server/service/system"
+
+	"github.com/pkg/errors"
+	"gorm.io/gorm"
 )
 
 const initOrderMenuAuthority = initOrderMenu + initOrderAuthority
@@ -57,12 +58,12 @@ func (i *initMenuAuthority) InitializeData(ctx context.Context) (next context.Co
 	}
 
 	// 9528
-	if err = db.Model(&authorities[2]).Association("SysBaseMenus").Replace(menus[:11]); err != nil {
+	if err = db.Model(&authorities[2]).Association("SysBaseMenus").Replace(menus[:]); err != nil {
 		return next, err
 	}
-	if err = db.Model(&authorities[2]).Association("SysBaseMenus").Append(menus[12:17]); err != nil {
-		return next, err
-	}
+	// if err = db.Model(&authorities[2]).Association("SysBaseMenus").Append(menus[12:]); err != nil {
+	// 	return next, err
+	// }
 	return next, nil
 }
 

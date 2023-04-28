@@ -1,0 +1,19 @@
+[server]2023/04/21 - 15:25:36.282	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/04/21 - 15:26:19.403	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/04/21 - 15:31:30.404	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/reb/error_bill.go:157	获取失败!	{"error": "Error 1146: Table 'reb.error_bill' doesn't exist"}
+[server]2023/04/21 - 15:31:31.663	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/reb/reconciled_bill.go:157	获取失败!	{"error": "Error 1146: Table 'reb.reconciled_bill' doesn't exist"}
+[server]2023/04/21 - 15:31:33.814	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/reb/error_bill.go:157	获取失败!	{"error": "Error 1146: Table 'reb.error_bill' doesn't exist"}
+[server]2023/04/21 - 15:31:35.251	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/reb/third_party_bill.go:157	获取失败!	{"error": "Error 1146: Table 'reb.third_party_bill' doesn't exist"}
+[server]2023/04/21 - 15:31:36.210	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/reb/error_bill.go:157	获取失败!	{"error": "Error 1146: Table 'reb.error_bill' doesn't exist"}
+[server]2023/04/21 - 15:31:40.277	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/04/21 - 17:23:36.046	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/reb/error_bill.go:37	创建失败!	{"error": "Error 1265: Data truncated for column 'progress' at row 1"}
+[server]2023/04/21 - 17:35:15.676	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/reb/error_bill.go:37	创建失败!	{"error": "Error 1265: Data truncated for column 'progress' at row 1"}
+[server]2023/04/21 - 17:37:02.620	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/reb/error_bill.go:37	创建失败!	{"error": "Error 1265: Data truncated for column 'progress' at row 1"}
+[server]2023/04/21 - 17:37:52.633	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/reb/error_bill.go:37	创建失败!	{"error": "Error 1265: Data truncated for column 'progress' at row 1"}
+[server]2023/04/21 - 17:46:07.682	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/reb/error_bill.go:37	创建失败!	{"error": "Error 1265: Data truncated for column 'progress' at row 1"}
+[server]2023/04/21 - 21:54:58.491	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/reb/error_bill.go:157	获取失败!	{"error": "Error 1146: Table 'reb.error_bill' doesn't exist"}
+[server]2023/04/21 - 21:54:59.905	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/reb/third_party_bill.go:157	获取失败!	{"error": "Error 1146: Table 'reb.third_party_bill' doesn't exist"}
+[server]2023/04/21 - 21:55:01.455	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/reb/error_bill.go:157	获取失败!	{"error": "Error 1146: Table 'reb.error_bill' doesn't exist"}
+[server]2023/04/21 - 21:55:02.828	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/reb/third_party_bill.go:157	获取失败!	{"error": "Error 1146: Table 'reb.third_party_bill' doesn't exist"}
+[server]2023/04/21 - 21:55:03.828	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/reb/error_bill.go:157	获取失败!	{"error": "Error 1146: Table 'reb.error_bill' doesn't exist"}
+[server]2023/04/21 - 21:55:06.271	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection

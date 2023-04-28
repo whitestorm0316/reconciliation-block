@@ -1,4 +1,0 @@
-[server]2023/03/29 - 21:52:35.010	[34minfo[0m	/Users/john/code/reconciliation-block/server/initialize/gorm.go:67	register table success
-[server]2023/03/29 - 21:52:35.013	[34minfo[0m	/Users/john/code/reconciliation-block/server/initialize/router.go:40	register swagger handler
-[server]2023/03/29 - 21:52:35.015	[34minfo[0m	/Users/john/code/reconciliation-block/server/initialize/router.go:83	router register success
-[server]2023/03/29 - 21:52:35.015	[34minfo[0m	/Users/john/code/reconciliation-block/server/core/server.go:36	server run success on 	{"address": ":8888"}

@@ -1,1 +1,0 @@
-[server]2023/03/10 - 21:49:38.861	[31merror[0m	/Users/john/code/reconciliation-system-based-on-blockchain/admin/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection

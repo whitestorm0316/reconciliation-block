@@ -3,9 +3,9 @@
  */
 
 const config = {
-  appName: 'Gin-Vue-Admin',
-  appLogo: 'https://www.gin-vue-admin.com/img/logo.png',
-  showViteLogo: true
+  appName: 'Re-Block',
+  appLogo: 'https://img0.baidu.com/it/u=3214086081,947097423&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500',
+  showViteLogo: false
 }
 
 export const viteLogo = (env) => {
