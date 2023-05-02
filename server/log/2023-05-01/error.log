@@ -1,0 +1,14 @@
+[server]2023/05/01 - 16:16:36.172	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/05/01 - 16:43:50.481	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/reb/storage_contract.go:157	获取失败!	{"error": "Error 1146: Table 'reb.storage_contract' doesn't exist"}
+[server]2023/05/01 - 16:44:03.752	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/05/01 - 18:49:20.401	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/05/01 - 19:05:09.017	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/05/01 - 19:08:03.388	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/05/01 - 19:34:16.688	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/05/01 - 19:37:06.627	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/05/01 - 20:57:31.258	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/05/01 - 20:59:42.508	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/05/01 - 21:27:34.463	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/05/01 - 21:31:38.987	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/05/01 - 22:14:55.806	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
+[server]2023/05/01 - 22:29:29.218	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection

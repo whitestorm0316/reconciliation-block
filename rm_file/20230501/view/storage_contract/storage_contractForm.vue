@@ -11,8 +11,8 @@
         <el-form-item label="地址:" prop="address">
           <el-input v-model="formData.address" :clearable="true" placeholder="请输入" />
         </el-form-item>
-        <el-form-item label="区块链名称:" prop="blockName">
-          <el-input v-model="formData.blockName" :clearable="true" placeholder="请输入" />
+        <el-form-item label="区块链名称:" prop="privateKey">
+          <el-input v-model="formData.privateKey" :clearable="true" placeholder="请输入" />
         </el-form-item>
         <el-form-item>
           <el-button type="primary" @click="save">保存</el-button>
@@ -49,7 +49,7 @@ const formData = ref({
             name: '',
             note: '',
             address: '',
-            blockName: '',
+            privateKey: '',
         })
 // 验证规则
 const rule = reactive({

@@ -101,6 +101,8 @@
     <div class="gva-table-box">
         <div class="gva-btn-list">
             <el-button type="primary" icon="plus" @click="openDialog">新增</el-button>
+            <el-button type="primary" icon="right" @click="openSyncBlockDialog">同步区块链</el-button>
+
             <el-popover v-model:visible="deleteVisible" placement="top" width="160">
             <p>确定要删除吗？</p>
             <div style="text-align: right; margin-top: 8px;">
@@ -221,6 +223,22 @@
         </div>
       </template>
     </el-dialog>
+    <el-dialog v-model="syncBlockFormVisible" :before-close="closeSyncBlockDialog" title="弹窗操作">
+      <el-form :model="errorBillFormData" label-position="right" ref="elFormRef"  label-width="80px">
+        <el-form-item label="存储合约">
+          <el-select  v-model="contractName" placeholder="请选择存储合约" >
+            <el-option el-option v-for="contract in selectionContract" :label="`${contract.name}`" :value="`${contract.name}`"></el-option>
+          </el-select>
+        </el-form-item>
+      </el-form>
+      <template #footer>
+        <div class="dialog-footer">
+          <el-button @click="closeSyncBlockDialog">取 消</el-button>
+          <el-button type="primary" @click="enterSyncBlockDialog">确 定</el-button>
+        </div>
+      </template>
+    </el-dialog>
+    
   </div>
 </template>
 
@@ -237,13 +255,22 @@ import {
   deleteReconciledBillByIds,
   updateReconciledBill,
   findReconciledBill,
-  getReconciledBillList
+  getReconciledBillList,
+  syncBlock,
 } from '@/api/reconciled_bill'
+import {
+  getStorageContractList
+} from '@/api/storage_contract'
+import {
+  getBlockchainList
+} from '@/api/block_chain'
+
 
 // 全量引入格式化工具 请按需保留
 import { getDictFunc, formatDate, formatBoolean, filterDict } from '@/utils/format'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { ref, reactive } from 'vue'
+import { timePanelSharedProps } from 'element-plus/es/components/time-picker/src/props/shared'
 
 // 自动化生成的字典（可能为空）以及字段
 const formData = ref({
@@ -330,6 +357,107 @@ const getTableData = async() => {
 
 getTableData()
 
+// ============== 同步区块链模块 =================
+const syncBlockFormVisible = ref(false)
+const errorBillFormData = ref({
+      tradingUserId: 0,
+      transactionNumber: '',
+      transactionTime: new Date(),
+      transactionType: '',
+      counterparty: '',
+      paymentMethod: '',
+      incomeOrExpenses: '',
+      money: 0,
+      reconciled: false,
+      organization: '',
+      reconciler: 0,
+      reviewer: 0,
+      reason: '',
+      errorReason: '',
+      note: '',
+      localBillId: 0,
+      thirdPartyBillId: 0,
+      })
+
+const errorReason = ref('')
+const contractName = ref('')
+const selectionContract = ref([])
+
+
+const getContracts = async()=>{ 
+  const data = await getStorageContractList({ page: 0, pageSize: 1000000, ...searchInfo.value })
+  if (data.code === 0){
+    selectionContract.value = data.data.list
+  }
+  console.log(data)
+}
+
+// 打开同步区块链弹窗
+const openSyncBlockDialog = ()=>{
+  syncBlockFormVisible.value = true
+  getContracts()
+}
+// 关闭同步区块链弹窗
+const closeSyncBlockDialog = ()=>{
+  syncBlockFormVisible.value = false
+}
+
+const enterSyncBlockDialog = async()=>{
+  const ids = []
+  if (multipleSelection.value.length === 0) {
+    ElMessage({
+      type: 'warning',
+      message: '请选择要同步区块链的数据'
+    })
+    return
+  }
+
+  let block_chain = {}
+  let contract = {}
+  multipleSelection.value &&
+    multipleSelection.value.map(item => {
+    
+      searchInfo.value.name = contractName.value
+      getStorageContractList({ page: 0, pageSize: 1000000, ...searchInfo.value }).then(res =>{
+        if(res.code === 0){
+          if (res.data.list.length > 0){
+              contract = res.data.list[0]
+              searchInfo.value.name = contract.blockName
+              getBlockchainList({ page: 0, pageSize: 1, ...searchInfo.value }).then(res =>{
+                  if(res.code === 0){
+                    if (res.data.list.length > 0){
+                      block_chain = res.data.list[0]
+                    }
+                    console.log("b",block_chain)
+                    console.log("c",contract)
+                    const d = {
+                      id: item.transactionNumber,
+                      value: JSON.stringify(item),
+                      timestamp: new Date(item.transactionTime).getTime()
+                    }
+                    const data = {
+                      contractName: contract.name,
+                      privateKey: block_chain.privateKey,
+                      url: block_chain.url,
+                      contractAddress: contract.address,
+                      data: d
+                    }
+                    syncBlock(data).then(res=>{
+                      console.log(res)
+                    })
+                    
+                  }
+              })
+          }
+        }
+      })
+      
+    
+    })  
+  syncBlockFormVisible.value = true
+  getTableData()
+
+}
 // ============== 表格控制部分结束 ===============
 
 // 获取需要的字典 可能为空 按需保留

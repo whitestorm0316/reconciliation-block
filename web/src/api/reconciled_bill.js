@@ -95,3 +95,21 @@ export const getReconciledBillList = (params) => {
     params
   })
 }
+
+
+// @Tags SyncBlock
+// @Summary 同步至区块链SyncBlock
+// @Security ApiKeyAuth
+// @accept application/json
+// @Produce application/json
+// @Param data body reb.ReconciledBill true "同步至区块链SyncBlock"
+// @Success 200 {string} string "{"success":true,"data":{},"msg":"更新成功"}"
+// @Router /rb/syncBlock [post]
+
+export const syncBlock = (data) => {
+  return service({
+    url: '/rb/syncBlock',
+    method: 'post',
+    data
+  })
+}

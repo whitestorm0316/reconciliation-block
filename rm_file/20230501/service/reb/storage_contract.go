@@ -66,8 +66,8 @@ func (scService *StorageContractService)GetStorageContractInfoList(info rebReq.S
     if info.Address != "" {
         db = db.Where("address LIKE ?","%"+ info.Address+"%")
     }
-    if info.BlockName != "" {
-        db = db.Where("block_name LIKE ?","%"+ info.BlockName+"%")
+    if info.PrivateKey != "" {
+        db = db.Where("private_key LIKE ?","%"+ info.PrivateKey+"%")
     }
 	err = db.Count(&total).Error
 	if err!=nil {

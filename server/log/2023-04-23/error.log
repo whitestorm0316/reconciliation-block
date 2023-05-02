@@ -1,5 +1,0 @@
-[server]2023/04/23 - 11:47:12.004	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
-[server]2023/04/23 - 22:04:25.620	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/system/sys_user.go:56	登陆失败! 用户名不存在或者密码错误!	{"error": "db not init"}
-[server]2023/04/23 - 22:04:32.129	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/core/server.go:48	accept tcp [::]:8888: use of closed network connection
-[server]2023/04/23 - 22:19:30.261	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/reb/local_bill.go:133	查询失败!	{"error": "record not found"}
-[server]2023/04/23 - 22:19:31.521	[31merror[0m	/home/whitestorm/workspace/reconciliation-block/server/api/v1/reb/local_bill.go:133	查询失败!	{"error": "record not found"}

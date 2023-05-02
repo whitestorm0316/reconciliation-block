@@ -19,8 +19,8 @@
          <el-input v-model="searchInfo.address" placeholder="搜索条件" />
 
         </el-form-item>
-        <el-form-item label="区块链名称">
-         <el-input v-model="searchInfo.blockName" placeholder="搜索条件" />
+        <el-form-item label="区块链私钥">
+         <el-input v-model="searchInfo.privateKey" placeholder="搜索条件" />
 
         </el-form-item>
         <el-form-item>
@@ -58,7 +58,7 @@
         <el-table-column align="left" label="名称" prop="name" width="120" />
         <el-table-column align="left" label="备注" prop="note" width="120" />
         <el-table-column align="left" label="地址" prop="address" width="120" />
-        <el-table-column align="left" label="区块链名称" prop="blockName" width="120" />
+        <el-table-column align="left" label="区块链名称" prop="privateKey" width="120" />
         <el-table-column align="left" label="按钮组">
             <template #default="scope">
             <el-button type="primary" link icon="edit" class="table-button" @click="updateStorageContractFunc(scope.row)">变更</el-button>
@@ -89,8 +89,8 @@
         <el-form-item label="地址:"  prop="address" >
           <el-input v-model="formData.address" :clearable="true"  placeholder="请输入" />
         </el-form-item>
-        <el-form-item label="区块链名称:"  prop="blockName" >
-          <el-input v-model="formData.blockName" :clearable="true"  placeholder="请输入" />
+        <el-form-item label="区块链名称:"  prop="privateKey" >
+          <el-input v-model="formData.privateKey" :clearable="true"  placeholder="请输入" />
         </el-form-item>
       </el-form>
       <template #footer>
@@ -119,25 +119,17 @@ import {
   getStorageContractList
 } from '@/api/storage_contract'
 
-import{
-  getBlockchainList
-}from '@/api/block_chain'
-
 // 全量引入格式化工具 请按需保留
 import { getDictFunc, formatDate, formatBoolean, filterDict } from '@/utils/format'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { ref, reactive } from 'vue'
-
-
 
 // 自动化生成的字典（可能为空）以及字段
 const formData = ref({
         name: '',
         note: '',
         address: '',
-        blockName: '',
-        url: '',
-        privateKey:'',
+        privateKey: '',
         })
 
 // 验证规则
@@ -297,7 +289,7 @@ const closeDialog = () => {
         name: '',
         note: '',
         address: '',
-        blockName: '',
+        privateKey: '',
         }
 }
 // 弹窗确定
@@ -305,12 +297,6 @@ const enterDialog = async () => {
      elFormRef.value?.validate( async (valid) => {
              if (!valid) return
               let res
-              searchInfo.name = formData.value.blockName
-              res = await getBlockchainList({ page: page.value, pageSize: pageSize.value, ...searchInfo.value })
-              if (res.data.list.length > 0){
-                   formData.value.url =  res.data.list[0].url
-                   formData.value.privateKey = res.data.list[0].privateKey
-              }
               switch (type.value) {
                 case 'create':
                   res = await createStorageContract(formData.value)
